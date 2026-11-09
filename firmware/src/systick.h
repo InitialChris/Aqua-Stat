@@ -7,6 +7,11 @@
 extern volatile uint32_t system_ticks;
 
 /**
+ * @brief Init Timer4 for millis function
+ */
+void SysTick_Init();
+
+/**
  * @brief Get the system uptime in milliseconds.
  * Disables interrupts locally to ensure atomic read of the 32-bit value on an 8-bit MCU.
  * @return The number of milliseconds since the system started.
